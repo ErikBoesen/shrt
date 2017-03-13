@@ -11,7 +11,7 @@ from termcolor import colored
 parser = argparse.ArgumentParser(description='Create shortlinks with shirt.')
 parser.add_argument('url', type=str, help='The URL you want to shorten.')
 parser.add_argument('--key', dest='key', default=None, help='Custom key to use.')
-parser.add_argument('--host', dest='host', default=os.environ['SHRT_HOST'], help='A custom host to upload links to, if necessary. Defaults to $SHRT_HOST.')
+parser.add_argument('--host', dest='host', default=os.environ['SHIRT_HOST'], help='A custom host to upload links to, if necessary. Defaults to $SHIRT_HOST.')
 
 args = parser.parse_args()
 
